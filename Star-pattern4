@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+int main(int argc, char const *argv[])
+{
+    int n=7;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n;j++){
+            //printf("j value after every instance : %d\n",j);
+             if(j>=i){
+                printf("*");
+                //Variant for printing number pattern
+                // printf("%d",i);
+                /*
+                
+                0000000
+                 111111
+                  22222
+                   3333
+                    444
+                     55
+                      6
+                      */
+                continue;
+                
+             }
+             else{
+                printf(" ");
+             }
+            
+        }
+        printf("\n");
+    }
+    /* code */
+    return 0;
+}

@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+//----Recurrence Relationship
+int factorial(int n){
+    if(n==0 || n==1){
+        return 1;   //----Base Condition
+
+    }
+    else{
+        return n*factorial(n-1);
+    }
+       
+}
+
+//-----Iterative Method
+int fact(int x){
+    int val=1;
+    for(int i=x;i>1;i--){
+        val*=i;
+    }
+    return val;
+}
+    
+
+
+int main(int argc, char const *argv[])
+{   
+    int num= 0;
+   // printf("Enter the number\n");
+    //scanf(" %d ",&num);
+    int a=factorial(num);
+    printf("the factorial is : %d \n",a);
+    int b=fact(num);
+    printf("the factorial is : %d\n ",b);
+
+
+    /* code */
+    return 0;
+}

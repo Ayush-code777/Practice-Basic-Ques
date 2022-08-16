@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void dectobin(int x){
+    int arr[10];
+    int i=0;
+
+    while(x){
+        int rem=x%2;
+        
+        
+        x=x/2;
+        arr[i]=rem;
+        i++;
+        
+    }
+   // printf("%d \n",i);
+    for(int j=(i-1);j>=0;j--){
+        printf("%d ",arr[j]);
+    }
+    printf("\n");
+
+}
+
+int main(int argc, char const *argv[])
+{
+    int b=5;
+    dectobin(b);
+
+    /* code */
+    return 0;
+}

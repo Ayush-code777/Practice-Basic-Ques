@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int check(int x[],int a){
+    int counter=-1;
+    for(int i=0;i<a;i++){
+        if(x[i]>counter){
+            counter=x[i];
+        }
+        else{
+            continue;
+        }
+
+    }
+    return counter;
+}
+int checkmin(int arr[], int b){
+    int counter=arr[0];
+    for(int i=0;i<b;i++){
+        if(counter>arr[i]){
+            counter=arr[i];
+        }
+        else{
+            continue;
+        }
+    }
+    return counter;
+}
+
+
+int main(int argc, char const *argv[])
+{
+    /* code */
+    int arr[]={1,56,76,87,23,45};
+    int n=6;
+
+    //int counter=-1;
+    printf("The largest element is : %d\n",check(arr,n));
+    printf("The smallest element is : %d\n",checkmin(arr,n));
+
+    return 0;
+}

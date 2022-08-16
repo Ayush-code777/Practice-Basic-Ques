@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int sum(int a){
+    long int b=(a*(a+1))/2;
+    return b;
+}
+
+
+int main(int argc, char const *argv[])
+{
+    int x=777999;
+    printf("The sum of %d natural numbers is : %d\n",x,sum(x));
+    /* code */
+    return 0;
+}
